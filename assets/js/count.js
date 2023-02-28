@@ -12,4 +12,4 @@ if (!visitCount) {
 }
 
 // Display the visit count on the page
-document.getElementById('visit-counter').innerHTML = `You are visitor number ${visitCount}.`;
+document.getElementById('visit-counter').innerHTML = `Views: ${visitCount}.`;
