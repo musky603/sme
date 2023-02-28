@@ -1,6 +1,3 @@
-
-
-<script>
 // Retrieve the visit count from localStorage
 var visitCount = localStorage.getItem('visitCount');
 if (!visitCount) {
@@ -16,5 +13,7 @@ if (!sessionStorage.getItem('hasVisited')) {
 
 // Display the visit count on the page
 document.getElementById('visit-count').textContent = 'Total visits: ' + visitCount;
-</script>
+
+
+
 
