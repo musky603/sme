@@ -1,19 +1,8 @@
-// Retrieve the visit count from localStorage
-var visitCount = localStorage.getItem('visitCount');
-if (!visitCount) {
-  visitCount = 0;
-}
-
-// Increment the visit count for new visitors
-if (!sessionStorage.getItem('hasVisited')) {
-  visitCount++;
-  sessionStorage.setItem('hasVisited', true);
-  localStorage.setItem('visitCount', visitCount);
-}
-
-// Display the visit count on the page
-document.getElementById('visit-count').textContent = 'Total visits: ' + visitCount;
-
+let count = 0; // initial count number
+setInterval(() => {
+  count += 9; // increase count by 3
+  document.getElementById("visit-count").innerHTML = `Total visits: ${count}`;
+}, 1200000); // run every 30 minutes (30 * 60 * 1000 = 1800000 milliseconds)
 
 
 
